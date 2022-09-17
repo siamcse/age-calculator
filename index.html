@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h2 class="text-center text-4xl text-info">Age Calculator</h2>
+    </header>
+    <main class="w-3/4 mx-auto mt-12">
+        <section class="flex justify-center items-center">
+            <h3 class="text-xl pr-2">Birth Date: </h3>
+            <div class="form-control">
+                <div class="input-group">
+                    <select id="month" class="select select-bordered">
+                        <option disabled selected>Select Month</option>
+                        <option class="month" value="0">Jan</option>
+                        <option class="month" value="1">Feb</option>
+                        <option class="month" value="2">March</option>
+                        <option class="month" value="3">April</option>
+                        <option class="month" value="4">May</option>
+                        <option class="month" value="5">June</option>
+                        <option class="month" value="6">July</option>
+                        <option class="month" value="7">Agust</option>
+                        <option class="month" value="8">September</option>
+                        <option class="month" value="9">October</option>
+                        <option class="month" value="10">November</option>
+                        <option class="month" value="11">December</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="input-group">
+                    <select id="date" class="select select-bordered">
+                        <option disabled selected>Select Date</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="input-group">
+                <input id="year" type="number" placeholder="Select Year" class="input input-bordered input-md w-full max-w-xs" />
+                </div>
+            </div>
+        </section>
+        <div class="flex justify-center mt-5">
+            <button id="calculate-btn" class="btn btn-info">Calculate</button>
+        </div>
+        <div class="flex justify-center mt-5" id="show-age">
+            
+        </div>
+    </main>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
